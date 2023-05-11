@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-const routes = require('./controllers');
+const routes = require('./controllers/api');
 // const helpers = require('./utils/helpers');
 
 // Setting up our Database connect with our APP
