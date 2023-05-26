@@ -2,13 +2,13 @@
 A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
 
 
-User Story
+## User Story
 
 AS A developer who writes about tech
 I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
-Acceptance Criteria
+## Acceptance Criteria
 
 GIVEN a CMS-style blog site
 WHEN I visit the site for the first time
@@ -43,3 +43,12 @@ WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view posts and comments but I am prompted to log in again before I can add, update, or delete posts
+
+## How We Did this:
+First we set up the models and routes for the blog posts, comments, and users. We started with creating the basic MVC structure for our project. We then made handlebars for the project and then were able to make login work as well as the homepage. Unfortunately we were not able to finish this assignment and it is in a less than desirable state. 
+
+## Link to Github Repository
+https://github.com/shababrc/Tech-Blog
+
+## Credits:
+Credits to tutors Irina Kudosova and Jehyun Jung for their help as well as Bryan Swarthout and Shawn Tschoepe for their instruction.

@@ -2,8 +2,9 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-const routes = require('./controllers/api');
+const routes = require('./controllers/');
 // const helpers = require('./utils/helpers');
+const listEndpoints = require('express-list-endpoints') ;
 
 // Setting up our Database connect with our APP
 const sequelize = require('./config/connection');
@@ -39,7 +40,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
-
+console.log (listEndpoints (app)) ;
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
